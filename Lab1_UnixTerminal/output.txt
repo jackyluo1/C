@@ -1,0 +1,105 @@
+# Simply copy and paste the output from your terminal here!
+
+1.ls - lists the files and folders in the current directory.
+-bash-4.2$ ls
+monorepo-luoj976
+
+2.mkdir - Create a new directory
+-bash-4.2$ mkdir luojing
+-bash-4.2$ ls
+luojing  monorepo-luoj976
+
+3.cd - Change directory
+-bash-4.2$ cd monorepo-luoj976/
+-bash-4.2$ ls
+Assignment1_GuessingGame          Lab1_UnixTerminal
+Assignment2_C_Data_Structures     Lab2_LinkedList
+Assignment3_More_Data_Structures  Lab3_Assembly
+Assignment4_Hashmap               Lab4_Linkers
+
+4.man - Manual pages
+-bash-4.2$ man ls
+
+LS(1)                   User Commands                  LS(1)
+
+NAME
+       ls - list directory contents
+
+SYNOPSIS
+       ls [OPTION]... [FILE]...
+
+DESCRIPTION
+       List  information about the FILEs (the current direc‐
+       tory by default).   Sort  entries  alphabetically  if
+       none of -cftuvSUX nor --sort is specified.
+
+       Mandatory arguments to long options are mandatory for
+       short options too.
+
+       -a, --all
+              do not ignore entries starting with .
+
+       -A, --almost-all
+              do not list implied . and ..
+
+       --author
+              with -l, print the author of each file
+
+5.rmdir - Removes an empty directory
+-bash-4.2$ rmdir 
+-bash-4.2$ ls
+monorepo-luoj976
+
+6.sort - Sorts information
+-bash-4.2$ vim luojing.txt
+input:
+6
+5
+8
+9
+1
+4
+-bash-4.2$ sort luojing.txt
+-bash-4.2$ sort luojing.txt
+1
+4
+5
+6
+8
+9
+
+7.cat - Concatenates files and prints them to standard output
+-bash-4.2$ cat luojing.txt
+6
+5
+8
+9
+1
+4
+
+8.nl - Outputs a file with number of lines
+-bash-4.2$ nl luojing.txt
+     1	6
+     2	5
+     3	8
+     4	9
+     5	1
+     6	4
+
+9.cut - Remove sections from each file
+-bash-4.2$ cut -f 1 luojing.txt
+6
+5
+8
+9
+1
+4
+
+10.grep - Prints lines that match a pattern.
+-bash-4.2$ echo -e "a\nb\nc\na\nb\nc" | grep a -A 1
+a
+b
+--
+a
+b
+

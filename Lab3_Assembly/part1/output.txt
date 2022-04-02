@@ -1,0 +1,7 @@
+PUSH 1
+MOV 7
+LEA 2
+POP 1
+
+Total Instructions = 11
+Total Cycles = 11

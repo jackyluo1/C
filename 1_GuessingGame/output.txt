@@ -1,0 +1,52 @@
+#
+I am Jing Luo and I have requested my Khoury user_name on Jan 24, but my account is still unactive. I tried to test my account via the VM.
+#
+-bash-4.2$ clang main.c -o main
+-bash-4.2$ ./main
+==========================
+CPU Says: Pick a number 1-10
+==========================
+Make a guess:1
+No guess higher!
+Make a guess:9
+No guess lower!
+Make a guess:2
+No guess higher!  
+Make a guess:8
+You got it!
+==========================
+CPU Says: Pick a number 1-10
+==========================
+Make a guess:2
+No guess higher!
+Make a guess:8
+No guess lower!
+Make a guess:7
+You got it!
+==========================
+CPU Says: Pick a number 1-10
+==========================
+Make a guess:3
+No guess higher!
+Make a guess:7
+You got it!
+==========================
+CPU Says: Pick a number 1-10
+==========================
+Make a guess:4
+No guess higher!
+Make a guess:6
+You got it!
+==========================
+CPU Says: Pick a number 1-10
+==========================
+Make a guess:5
+You got it!
+=================================================
+|Here are the results of your guessing abilities|
+=================================================
+Game 0 took you 4 guesses
+Game 1 took you 3 guesses
+Game 2 took you 2 guesses
+Game 3 took you 2 guesses
+Game 4 took you 1 guesses
