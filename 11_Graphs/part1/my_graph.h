@@ -3,11 +3,7 @@
 //
 //
 //
-// - Implement each of the functions to create a working graph.
-// - Do not change any of the function declarations
-//   - (i.e. graph_t* create_graph() should not have additional arguments)
-// - You should not have any 'printf' statements in your graph functions.
-//   - (You may consider using these printf statements to debug, but they should be removed from your final version)
+using these printf statements to debug, but they should be removed from your final version)
 // ==================================================
 #ifndef MYGRAPH_H
 #define MYGRAPH_H
@@ -399,7 +395,6 @@ void free_graph(graph_t* g){
 int is_reachable(graph_t * g, int source, int dest){
     if(NULL == g) return -1;
 
- //   dll_t* visited_list = create_dll();
     dll_t* list = create_dll();
     graph_node_t* s_node = find_node(g,source);
     graph_node_t* d_node = find_node(g,dest);
@@ -411,28 +406,15 @@ int is_reachable(graph_t * g, int source, int dest){
     dll_push_back(list,s_node);       
     while(dll_size(list) != 0){
        graph_node_t* node = dll_pop_front(list);
-      // if( node->visited != 1){  
-          if(node->data == dest){
-     //        for(int j = 0; j < dll_size(visited_list);j++){
-      //          graph_node_t* v = dll_get(visited_list,j);
-      //          v->visited = 0;
-        //     }
            return 1;} 
-       //    node->visited = 1;
-         //  dll_push_back(visited_list,node);
+
           for(int i = 0; i < dll_size(node->outNeighbors); i++){
               graph_node_t* Nei = dll_get(node->outNeighbors,i);
               if(dll_contain_nodes(list,Nei) == 0){
                  dll_push_back(list,Nei);
               }
           }
-     //   } 
-    }/*
-    node_t* iter = visited_list->head;
-    for(int i = 0; i < dll_size(visited_list); i++){
-         graph_node_t* temp = dll_get(visited_list,i);     
-         temp->visited = 0;
-    }*/
+    }
     free_dll(list);
     return 0;
 }
@@ -501,14 +483,7 @@ int has_cycle_help(graph_t* g, dll_t* list){
 // // You may use either BFS or DFS to complete this task.
 int has_cycle(graph_t * g){
     if(NULL == g) return -1;
-/*    node_t* node = g->nodes->head;
-    dll_t* list = create_dll();
-    graph_node_t* g_node = node->data;
-    dll_push_back(list,g_node);
-    int value =has_cycle_help(g,list);
-    free_dll(list);    
-    return value;    
- */      
+    
     dll_t* list= create_dll(); 
     node_t* node = g->nodes->head;
     graph_node_t* g_node = node->data;
