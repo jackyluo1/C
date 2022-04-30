@@ -44,39 +44,4 @@ An algorithm itself does not have to be one single function. Sometimes it is hel
 1. swap -- Swaps two integers in an array
 2. sortIntegers -- This is where you will perform the actual insertion sort.
 
-## Compiling and running the program.
-
-When you have made an attempt at the sorting algorithm, go ahead and try to run it. Remember to save, compile, and test early and often!
-
-* Compile the source code with: `clang sort.c -o sort`
-* Run the source code with: `./sort`
-
-# Part 2 - Insertion Sort Complexity Q & A.
-
-Please answer and modify the answers in [exercises](./exercises.md).
-
-# Deliverable
-
-- Modify the file called [sort.c](./sort.c) and implement a version of insertion sort that sorts numbers in ascending order.
-- Answer the [exercises](./exercises.md) in Part 2
-  
-# Rubric
-
-- 80% Correct implementation of insertion sort (and not some other sort)
-  - There should be no memory leaks
-  - There should be no bugs in your functions 
-  - Your implementation will be graded by our set of unit tests, and we will check your code 'style' as well.  
-- 20% Correct answers to part 2
-   - Each answer in [exercises.md](./exercises.md) is weighted equally.
-
-# More resources to help
-
-- [Insertion sort video](https://www.youtube.com/watch?v=OGzPmgsI-pQ)
-- [Khan Academy Sorting, pseudocode, analysis, and exercise](https://www.khanacademy.org/computing/computer-science/algorithms/insertion-sort/a/insertion-sort)
-
-# (Optional) Going Further Task:
-
-(This is an ungraded task--only work on this if you finish the deliverable). You will have to do a little bit of work to figure out how to open and read from files for this task.
-
-- Implement insertion sort, but this time, use a linked list as the storage data structure, instead of an array.
 
